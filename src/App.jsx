@@ -7,7 +7,7 @@ import axios from "axios";
 function App() {
   const pay = async () => {
     const url = "https://tinypesa.com/api/v1/express/initialize";
-    fetch(url, {
+    await fetch(url, {
       body: "amount=1&msisdn=0113608188",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
